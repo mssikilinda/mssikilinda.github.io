@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> "Обработка данных формы" </title>
+    <style> 
+        body { font-family: Arial, Helvetica, sans-serif; 
+               background: #ebe8e8;
+               text-align: center;
+        }
+
+        .headd { background: #B0E0E6; /* Цвет фона */
+                 outline: 2px solid #000; /* Чёрная рамка */
+                 border: 3px solid #fff; /* Белая рамка */
+                 border-radius: 5px; /* Радиус скругления */
+        }
+    </style>
+</head>
+<body>
+        <div class="headd">
+            <h2> Калькулятор чисел в заданном BCD-коде 
+                с визуализацией арифметических действий.</h2>
+        </div> <!--Конец верхушки-->
+        <div class="main">
+            <h2> Шаг 1. Ввод чисел для преобразования их в BCD-код.</h2>
+            <p> Введите десятичные числа для их перевода в BCD-код вида 8-4-2-1:</p>
+            <form action="/cgi-bin/num.py">
+                <input type="number" name="NUM_1" step="0.00001">
+                <input type="number" name="NUM_2" step="0.00001">
+                <input type="submit">
+            </form>
+        </div> <!--Конец действий-->
+</body>
+</html>
